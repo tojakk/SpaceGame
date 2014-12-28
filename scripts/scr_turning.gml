@@ -6,7 +6,6 @@ var right_button = argument1;
 if gamepad_button_check(player,left_button) and not gamepad_button_check(player,right_button)
 {
     clockwise = 1
-    image_angle += r_angle;
     r_angle += r_speed;
 
     if r_angle < r_speed_max 
@@ -21,22 +20,19 @@ if gamepad_button_check(player,left_button) and not gamepad_button_check(player,
 if gamepad_button_check(player,right_button) and not gamepad_button_check(player,left_button)
 {
     clockwise = 0
-    image_angle += r_angle;
-    r_speed -= r_speed; 
-
-    if r_angle > -r_speed_max 
+    r_angle -= r_speed; 
+    if r_angle > r_speed_min
     {
     }
     else
     {
-        r_angle = -r_speed_max ;
+        r_angle = r_speed_min;
     }
 }
 if gamepad_button_check(player,left_button) and gamepad_button_check(player,right_button)
 {
     if (clockwise == 1)
     {
-        image_angle += r_angle;
         r_angle -= r_speed/2; 
 
         if r_angle > 0
@@ -50,7 +46,6 @@ if gamepad_button_check(player,left_button) and gamepad_button_check(player,righ
     
     if (clockwise == 0)
     {
-        image_angle += r_angle;
         r_angle += r_speed/2; 
 
         if r_angle < 0
@@ -66,15 +61,14 @@ if gamepad_button_check(player,left_button) and gamepad_button_check(player,righ
 
 if (clockwise == 1 and not gamepad_button_check(player,left_button))
 {
-    image_angle += r_angle;
+
 
 }
 else if (clockwise == 0 and not gamepad_button_check(player,right_button))
 {
-    image_angle += r_angle;
 
 }
 else if (clockwise == 2)
 {
 }
-
+image_angle += r_angle;
