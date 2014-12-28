@@ -10,6 +10,7 @@
     <sprite>sprites\sprCricket1</sprite>
     <sprite>sprites\sprBullet</sprite>
     <sprite>sprites\sprRetical</sprite>
+    <sprite>sprites\sprAsteroid</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -21,6 +22,7 @@
     <script>scripts\scr_get_gamepad_input.gml</script>
     <script>scripts\convert_to_deg.gml</script>
     <script>scripts\scr_room_collision.gml</script>
+    <script>scripts\scr_a_room_collision.gml</script>
     <script>scripts\scr_boost.gml</script>
     <script>scripts\scr_max_speed.gml</script>
     <script>scripts\scr_movement.gml</script>
@@ -35,6 +37,7 @@
     <object>objects\objRetical</object>
     <object>objects\objCricket2</object>
     <object>objects\objHealthBar</object>
+    <object>objects\objAsteroid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -53,6 +53,13 @@
     <instance objName="objRetical" x="128" y="64" name="inst_E32AE67C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCricket" x="624" y="464" name="inst_BD9938D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHealthBar" x="32" y="0" name="inst_17105195" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="160" y="224" name="inst_2DF1ADF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="416" y="112" name="inst_3A2981F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="544" y="176" name="inst_71427DF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="336" y="224" name="inst_458FC842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="608" y="256" name="inst_D8E65CF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="624" y="64" name="inst_AA20A0D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objAsteroid" x="672" y="208" name="inst_DD4A7139" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
