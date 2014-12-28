@@ -26,6 +26,13 @@
     <script>scripts\scr_movement.gml</script>
     <script>scripts\scr_turning.gml</script>
     <script>scripts\scr_thrusters.gml</script>
+    <scripts name="input">
+      <script>scripts\turn_left_pressed.gml</script>
+      <script>scripts\turn_right_pressed.gml</script>
+      <script>scripts\go_forward_pressed.gml</script>
+      <script>scripts\go_backward_pressed.gml</script>
+      <script>scripts\any_pressed.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
