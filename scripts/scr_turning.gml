@@ -1,9 +1,11 @@
 ///scr_turning(left_button,right_button)
-var left_button = argument0;
-var right_button = argument1;
+var left_button_pressed = argument0;
+var right_button_pressed = argument1;
 
 
-if gamepad_button_check(player,left_button) and not gamepad_button_check(player,right_button)
+image_angle += r_angle;
+
+if left_button_pressed and not right_button_pressed
 {
     clockwise = 1
     r_angle += r_speed;
@@ -13,14 +15,15 @@ if gamepad_button_check(player,left_button) and not gamepad_button_check(player,
     }
     else
     {
-        r_angle = r_speed_max ;
+        r_angle = r_speed_max;
     }
 }
 
-if gamepad_button_check(player,right_button) and not gamepad_button_check(player,left_button)
+if right_button_pressed and not left_button_pressed
 {
     clockwise = 0
-    r_angle -= r_speed; 
+    r_angle -= r_speed;
+    
     if r_angle > r_speed_min
     {
     }
@@ -29,7 +32,8 @@ if gamepad_button_check(player,right_button) and not gamepad_button_check(player
         r_angle = r_speed_min;
     }
 }
-if gamepad_button_check(player,left_button) and gamepad_button_check(player,right_button)
+
+if left_button_pressed and right_button_pressed
 {
     if (clockwise == 1)
     {
@@ -58,17 +62,3 @@ if gamepad_button_check(player,left_button) and gamepad_button_check(player,righ
     
     }
 }
-
-if (clockwise == 1 and not gamepad_button_check(player,left_button))
-{
-
-
-}
-else if (clockwise == 0 and not gamepad_button_check(player,right_button))
-{
-
-}
-else if (clockwise == 2)
-{
-}
-image_angle += r_angle;
