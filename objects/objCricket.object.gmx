@@ -87,10 +87,8 @@ jstick_right_vert=gp_axisrv;
             <string>//scr_boost(button_Ltrig); //speed and energy management
 
 scr_room_collision();
-scr_turning(gamepad_button_check(player, button_Lbumper), gamepad_button_check(player, button_Rbumper)); //bumper turning
-scr_turning(keyboard_check(ord('A')), keyboard_check(ord('D')));
-scr_thrusters(gamepad_button_check(player, button_Rtrig), gamepad_button_check(player, button_Ltrig));
-scr_thrusters(keyboard_check(ord('W')), keyboard_check(ord('S')));
+scr_turning(turn_left_pressed(), turn_right_pressed());
+scr_thrusters(go_forward_pressed(), go_backward_pressed());
 
 direction = image_angle;
 

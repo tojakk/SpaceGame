@@ -1,0 +1,23 @@
+{
+    "developers": [
+        {
+            "name": "Adam Kalman",
+            "value": "@akalman"
+        },
+        {
+            "name": "Jacob Anderson",
+            "value": "@tojakk"
+        }
+    ],
+    "testers": [
+        {
+            "name": "Adam Kalman",
+            "value": "@akalman"
+        },
+        {
+            "name": "Jacob Anderson",
+            "value": "@tojakk"
+        }
+    ],
+    "questions": []
+}
