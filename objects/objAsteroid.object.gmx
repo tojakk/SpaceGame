@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>
+randomize();
 r_speed = random_range (-10,10)
 
 vspeed = random_range(-10,10);

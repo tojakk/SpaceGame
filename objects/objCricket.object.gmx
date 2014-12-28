@@ -26,14 +26,18 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
+for (i=0; i&lt;100; i++)
+{
+    instance_create(random(room_width), random(room_height), objAsteroid);
+}
 player = 0;
 energy = 100;
 e_decay = 1;    //energy decay
 e_regen = .3;   //energy regen
 r_angle = 0;    //rotational angle
-r_speed = 0.4;  //rotational speed
-r_speed_min = -6;
-r_speed_max = 6;
+r_speed = 0.3;  //rotational speed
+r_speed_min = -3;
+r_speed_max = 3;
 m_speed = 1;
 forward_max_speed = 15
 back_max_speed = -15
@@ -90,7 +94,7 @@ scr_thrusters(keyboard_check(ord('W')), keyboard_check(ord('S')));
 
 direction = image_angle;
 
-
+show_debug_message(string(r_angle));
 //scr_max_speed();
 //show_message(image_angle);
 //scr_movement(); //left stick (movement) with boost
