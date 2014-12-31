@@ -19,7 +19,7 @@ if left_button_pressed and not right_button_pressed
     }
 }
 
-if right_button_pressed and not left_button_pressed
+else if right_button_pressed and not left_button_pressed
 {
     clockwise = 0
     r_angle -= r_speed;
@@ -33,11 +33,12 @@ if right_button_pressed and not left_button_pressed
     }
 }
 
-if left_button_pressed and right_button_pressed
+//if left_button_pressed and right_button_pressed
+else
 {
     if (clockwise == 1)
     {
-        r_angle -= r_speed/2; 
+        r_angle -= r_speed/8; 
 
         if r_angle > 0
         {
@@ -50,7 +51,7 @@ if left_button_pressed and right_button_pressed
     
     if (clockwise == 0)
     {
-        r_angle += r_speed/2; 
+        r_angle += r_speed/8; 
 
         if r_angle < 0
         {
